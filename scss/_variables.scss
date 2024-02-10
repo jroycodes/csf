@@ -5,5 +5,24 @@ $black: #020202;
 $grey: #333333;
 $white: #FFFFFF;
 $white2: rgba(255, 255, 255, 0.7);
+
+// BACKGROUND COLORS
 $bg-color: #F3F2E7;
 $bg-color2: #FCFBF7;
+
+// TYPOGRAPHY 
+h1{
+    font-size: clamp(2.5rem, 5vw, 6.25rem);
+    line-height: 5rem;
+}
+
+h2{
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 3.75rem;
+}
+
+h3{
+    font-size: clamp(2.5rem, 5vw, 2.5rem);
+    line-height: 3.125rem;
+}
+
