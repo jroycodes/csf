@@ -1,0 +1,115 @@
+@import "./resets.scss";
+@import "./variables.scss";
+@import "./sidebars";
+
+body {
+  margin: 1rem;
+  background-color: $bg-color;
+  font-family: 'DM Sans', sans-serif;
+}
+
+// HEADER SECTION
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    border: none;
+    background-color: $bg-color;
+  }
+
+  .content ul {
+    margin: 1rem 0 0 0;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+
+    ul:hover {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+// SECTION ONE
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3.5rem;
+
+  img{
+    object-fit: contain;
+    max-inline-size: 100%;
+}
+
+  h1 {
+    max-inline-size: 12ch;
+  }
+
+  p {
+    margin: 1rem 0 2rem 0;
+    max-inline-size: 36ch;
+  }
+}
+
+// SECTION TWO
+#second {
+  .charity {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    h4 {
+      color: $primary-color;
+    }
+
+    h1 {
+      max-inline-size: 22ch;
+    }
+
+    p {
+      max-inline-size: 68ch;
+    }
+
+    a {
+      color: $primary-color;
+    }
+  }
+}
+
+// SECTION THREE
+.third {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: $white2;
+
+  #grey {
+    background-color: $grey;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 230px;
+    background-color: $primary-color;
+
+    p {
+      max-inline-size: 20ch;
+    }
+  }
+}
