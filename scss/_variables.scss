@@ -1,28 +1,39 @@
-// COLORS 
-$primary-color: #00715D;
-$secondary-color: #FFD249;
+// COLORS
+$primary-color: #00715d;
+$secondary-color: #ffd249;
 $black: #020202;
 $grey: #333333;
-$white: #FFFFFF;
+$white: #ffffff;
 $white2: rgba(255, 255, 255, 0.7);
 
 // BACKGROUND COLORS
-$bg-color: #F3F2E7;
-$bg-color2: #FCFBF7;
+$bg-color: #f3f2e7;
+$bg-color2: #fcfbf7;
 
-// TYPOGRAPHY 
-h1{
-    font-size: clamp(2.5rem, 5vw, 6.25rem);
-    line-height: 5rem;
+// TYPOGRAPHY
+h1 {
+  font-size: clamp(2.5rem, 5vw, 6.25rem);
 }
 
-h2{
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    line-height: 3.75rem;
+h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
 }
 
-h3{
-    font-size: clamp(2.5rem, 5vw, 2.5rem);
-    line-height: 3.125rem;
+h3 {
+  font-size: clamp(2.5rem, 5vw, 2.5rem);
 }
 
+// FONT
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap');
+
+// BUTTONS
+button {
+  background-color: $primary-color;
+  border: none;
+  color: $white2;
+  padding: 1.125rem 2.375rem;
+}
+
+section{
+    margin-top: 3.625rem;
+}
