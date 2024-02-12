@@ -35,3 +35,19 @@ function openNav() {
   //   div.style.display = div.style.display === "none" ? "block" : "none";
   // }
   
+// Toggle dropdown
+  function toggleListItem(toggleButton) {
+    const listItem = toggleButton.parentElement;
+    const content = listItem.querySelector('.content');
+    
+    // Toggle the 'active' class on the list item
+    listItem.classList.toggle('active');
+    
+    // Toggle the display of the content
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+    } else {
+      content.style.display = 'none';
+    }
+  }
+  
