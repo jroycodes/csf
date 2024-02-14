@@ -12,7 +12,9 @@ $bg-color2: #fcfbf7;
 
 // TYPOGRAPHY
 h1 {
-  font-size: clamp(2.5rem, 5vw, 6.25rem);
+  font-size: clamp(3.375rem, 5vw, 6.25rem);
+  font-weight: 700;
+  line-height: 3.75rem;
 }
 
 h2 {
@@ -23,6 +25,12 @@ h3 {
   font-size: clamp(2.5rem, 5vw, 2.5rem);
 }
 
+p{
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+}
+
 // FONT
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap');
 
@@ -30,8 +38,11 @@ h3 {
 button {
   background-color: $primary-color;
   border: none;
-  color: $white2;
+  color: $white;
   padding: 1.125rem 2.375rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
 }
 
 section{
