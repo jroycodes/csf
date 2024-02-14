@@ -14,7 +14,6 @@ $bg-color2: #fcfbf7;
 h1 {
   font-size: clamp(3.375rem, 5vw, 6.25rem);
   font-weight: 700;
-  line-height: 3.75rem;
 }
 
 h2 {
@@ -28,7 +27,6 @@ h3 {
 p{
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 1.875rem;
 }
 
 // FONT
@@ -42,9 +40,15 @@ button {
   padding: 1.125rem 2.375rem;
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.25rem;
 }
 
+// SECTIONS
 section{
     margin-top: 3.625rem;
+}
+
+// IMAGES
+img{
+  object-fit: contain;
+  max-inline-size: 100%;
 }
