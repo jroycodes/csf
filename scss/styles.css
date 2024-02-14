@@ -198,26 +198,43 @@ header .content ul ul:hover {
   color: #00715d;
 }
 
-.third {
+.section3 {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.7);
 }
-.third #grey {
+.section3 #second {
   background-color: #333333;
+  color: #ffffff;
 }
-.third div {
+.section3 .initiatives {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 375px;
-  height: 230px;
+  gap: 1rem;
+  flex-basis: inherit;
+  flex-grow: 2;
+  min-width: inherit;
   background-color: #00715d;
+  color: #ffffff;
 }
-.third div p {
-  max-inline-size: 20ch;
+.section3 .initiatives p {
+  max-inline-size: 27ch;
+  margin-top: 3rem;
+  margin-left: 3.125rem;
+}
+.section3 .initiatives a {
+  text-align: left;
+  margin-bottom: 3rem;
+  margin-left: 3.125rem;
+}
+.section3 .initiatives a {
+  color: #ffffff;
+}
+.section3 .initiatives a:hover {
+  color: #ffd249;
+}
+.section3 .initiatives a:visited {
+  color: #00715d;
 }/*# sourceMappingURL=styles.css.map */
