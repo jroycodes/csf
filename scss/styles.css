@@ -8,7 +8,6 @@
 h1 {
   font-size: clamp(3.375rem, 5vw, 6.25rem);
   font-weight: 700;
-  line-height: 3.75rem;
 }
 
 h2 {
@@ -22,7 +21,6 @@ h3 {
 p {
   font-weight: 400;
   font-size: 1.125rem;
-  line-height: 1.875rem;
 }
 
 button {
@@ -32,11 +30,16 @@ button {
   padding: 1.125rem 2.375rem;
   font-weight: 500;
   font-size: 1.25rem;
-  line-height: 1.25rem;
 }
 
 section {
   margin-top: 3.625rem;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-inline-size: 100%;
 }
 
 .sidebar {
@@ -161,24 +164,19 @@ header .content ul ul:hover {
   text-decoration: underline;
 }
 
-.intro {
+.first, .second {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 3.5rem;
 }
-.intro img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-inline-size: 100%;
+.first h1, .second h1 {
+  max-inline-size: 9ch;
 }
-.intro h1 {
-  max-inline-size: 12ch;
-}
-.intro p {
+.first p, .second p {
+  max-inline-size: 30ch;
   margin: 1rem 0 2rem 0;
-  max-inline-size: 36ch;
 }
 
 #second .charity {
@@ -190,10 +188,11 @@ header .content ul ul:hover {
   color: #00715d;
 }
 #second .charity h1 {
-  max-inline-size: 22ch;
+  max-inline-size: 14ch;
 }
 #second .charity p {
-  max-inline-size: 68ch;
+  margin: 1rem 0 2rem 0;
+  max-inline-size: 58ch;
 }
 #second .charity a {
   color: #00715d;
