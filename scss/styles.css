@@ -143,6 +143,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
 }
 header ul {
   list-style: none;
@@ -164,17 +165,20 @@ header .content ul ul:hover {
   text-decoration: underline;
 }
 
-.first, .second {
+.first,
+.second {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   gap: 3.5rem;
 }
-.first h1, .second h1 {
+.first h1,
+.second h1 {
   max-inline-size: 9ch;
 }
-.first p, .second p {
+.first p,
+.second p {
   max-inline-size: 30ch;
   margin: 1rem 0 2rem 0;
 }
@@ -237,4 +241,64 @@ header .content ul ul:hover {
 }
 .section3 .initiatives a:visited {
   color: #00715d;
+}
+
+.section4 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5rem;
+}
+.section4 .helpus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.section4 .helpus .articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.section4 .helpus .articles article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.section4 .helpus article p {
+  max-inline-size: 25ch;
+}
+.section4 .helpus a {
+  color: #00715d;
+}
+.section4 .helpus .mission h1 {
+  max-inline-size: 10ch;
+}
+
+.tests {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.tests .test1 {
+  min-width: inherit;
+  min-height: 32.75rem;
+  background-color: #00715d;
+}
+.tests .test1 .test1 h2 {
+  margin: 1.5rem 0;
+}
+.tests .test2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  background-color: orangered;
+}
+.tests .test2 .mover {
+  position: absolute;
+  top: inherit;
 }/*# sourceMappingURL=styles.css.map */
