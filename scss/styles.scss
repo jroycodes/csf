@@ -13,6 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem;
 
   ul {
     list-style: none;
@@ -39,7 +40,8 @@ header {
 }
 
 // SECTION ONE
-.first, .second {
+.first,
+.second {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -83,18 +85,18 @@ header {
 }
 
 // SECTION THREE
- .section3{
+.section3 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 
-  #second{
+  #second {
     background-color: $grey;
     color: $white;
   }
 
-  .initiatives{
+  .initiatives {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,28 +107,131 @@ header {
     background-color: $primary-color;
     color: $white;
 
-    p{
+    p {
       max-inline-size: 27ch;
       margin-top: 3rem;
-      margin-left: 3.125rem ;
+      margin-left: 3.125rem;
     }
 
-    a{
+    a {
       text-align: left;
       margin-bottom: 3rem;
-      margin-left: 3.125rem ;
+      margin-left: 3.125rem;
     }
 
-    a{
+    a {
       color: $white;
     }
 
-    a:hover{
+    a:hover {
       color: $secondary-color;
     }
 
-    a:visited{
+    a:visited {
       color: $primary-color;
     }
   }
- }
+}
+
+//  SECTION FOUR
+.section4 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.5rem;
+
+  .helpus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 3rem;
+
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+    }
+
+    article p {
+      max-inline-size: 25ch;
+    }
+
+    a {
+      color: $primary-color;
+    }
+
+    .mission h1 {
+      max-inline-size: 10ch;
+    }
+  }
+}
+
+// SECTION FIVE
+.tests {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .test1 {
+    min-width: inherit;
+    min-height: 32.75rem;
+    background-color: $primary-color;
+
+    .test1 h2 {
+      margin: 1.5rem 0;
+    }
+  }
+
+  .test2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    background-color: orangered;
+
+    .mover{
+      position: absolute;
+      top: inherit;
+    }
+  }
+}
+
+// .tests {
+// display: flex;
+// flex-direction: column;
+// gap: 2rem;
+// position: relative;
+
+// .test1 {
+//   min-width: inherit;
+//   min-height: 32.75rem;
+//   background-color: $primary-color;
+
+//   .test1 h2 {
+//     margin: 1.5rem 0;
+//   }
+// }
+
+//   .test2 {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     gap: 1.875rem;
+//     min-width: inherit;
+//     background-color: #fff;
+
+//     img{
+//       object-fit: contain;
+//       max-inline-size: 100%;
+//     }
+//   }
+// }
