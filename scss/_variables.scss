@@ -24,13 +24,13 @@ h3 {
   font-size: clamp(2.5rem, 5vw, 2.5rem);
 }
 
-p{
+p {
   font-weight: 400;
   font-size: 1.125rem;
 }
 
 // FONT
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap");
 
 // BUTTONS
 button {
@@ -43,12 +43,12 @@ button {
 }
 
 // SECTIONS
-section{
-    margin-top: 3.625rem;
+section {
+  margin-top: 3.625rem;
 }
 
 // IMAGES
-img{
+img {
   object-fit: contain;
   max-inline-size: 100%;
 }
