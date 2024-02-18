@@ -176,14 +176,14 @@ header {
 }
 
 // SECTION FIVE
-.tests {
+.section5 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   position: relative;
   background-color: $primary-color;
 
-  .mod-tests {
+  .campaign_head {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -214,14 +214,14 @@ header {
     }
   }
 
-  .test2 {
+  .campaign_mid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
     position: relative;
 
-    div{
+    div {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
@@ -230,10 +230,17 @@ header {
       background-color: $white;
       // top: 200px;
 
-      h3{
+      a {
+        color: $primary-color;
+      }
+
+      a:hover {
+        color: $grey;
+      }
+
+      h3 {
         max-inline-size: 12ch;
       }
     }
   }
 }
-

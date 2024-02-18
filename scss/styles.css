@@ -278,14 +278,14 @@ header .content ul ul:hover {
   max-inline-size: 10ch;
 }
 
-.tests {
+.section5 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   position: relative;
   background-color: #00715d;
 }
-.tests .mod-tests {
+.section5 .campaign_head {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -293,32 +293,32 @@ header .content ul ul:hover {
   color: #ffffff;
   padding: 3.125rem 1.125rem;
 }
-.tests .mod-tests h4 {
+.section5 .campaign_head h4 {
   color: #ffd249;
 }
-.tests .mod-tests h2 {
+.section5 .campaign_head h2 {
   max-inline-size: 16ch;
 }
-.tests .mod-tests button {
+.section5 .campaign_head button {
   padding: 1.125rem 4.4375rem 1.125rem 2.375rem;
   border: 1px solid #ffffff;
 }
-.tests .mod-tests button a {
+.section5 .campaign_head button a {
   -webkit-text-decoration: dashed;
           text-decoration: dashed;
   color: #ffffff;
 }
-.tests .mod-tests button i {
+.section5 .campaign_head button i {
   padding-left: 0.5rem;
 }
-.tests .test2 {
+.section5 .campaign_mid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   position: relative;
 }
-.tests .test2 div {
+.section5 .campaign_mid div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -326,6 +326,12 @@ header .content ul ul:hover {
   position: relative;
   background-color: #ffffff;
 }
-.tests .test2 div h3 {
+.section5 .campaign_mid div a {
+  color: #00715d;
+}
+.section5 .campaign_mid div a:hover {
+  color: #333333;
+}
+.section5 .campaign_mid div h3 {
   max-inline-size: 12ch;
 }/*# sourceMappingURL=styles.css.map */
