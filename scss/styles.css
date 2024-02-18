@@ -281,24 +281,51 @@ header .content ul ul:hover {
 .tests {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   position: relative;
-}
-.tests .test1 {
-  min-width: inherit;
-  min-height: 32.75rem;
   background-color: #00715d;
 }
-.tests .test1 .test1 h2 {
-  margin: 1.5rem 0;
+.tests .mod-tests {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #ffffff;
+  padding: 3.125rem 1.125rem;
+}
+.tests .mod-tests h4 {
+  color: #ffd249;
+}
+.tests .mod-tests h2 {
+  max-inline-size: 16ch;
+}
+.tests .mod-tests button {
+  padding: 1.125rem 4.4375rem 1.125rem 2.375rem;
+  border: 1px solid #ffffff;
+}
+.tests .mod-tests button a {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  color: #ffffff;
+}
+.tests .mod-tests button i {
+  padding-left: 0.5rem;
 }
 .tests .test2 {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  background-color: orangered;
+  gap: 2rem;
+  position: relative;
 }
-.tests .test2 .mover {
-  position: absolute;
-  top: inherit;
+.tests .test2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  position: relative;
+  background-color: #ffffff;
+}
+.tests .test2 div h3 {
+  max-inline-size: 12ch;
 }/*# sourceMappingURL=styles.css.map */

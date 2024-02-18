@@ -179,28 +179,61 @@ header {
 .tests {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   position: relative;
+  background-color: $primary-color;
 
-  .test1 {
-    min-width: inherit;
-    min-height: 32.75rem;
-    background-color: $primary-color;
+  .mod-tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: $white;
+    padding: 3.125rem 1.125rem;
 
-    .test1 h2 {
-      margin: 1.5rem 0;
+    h4 {
+      color: $secondary-color;
+    }
+
+    h2 {
+      max-inline-size: 16ch;
+    }
+
+    button {
+      padding: 1.125rem 4.4375rem 1.125rem 2.375rem;
+      border: 1px solid $white;
+
+      a {
+        text-decoration: dashed;
+        color: $white;
+      }
+
+      i {
+        padding-left: 0.5rem;
+      }
     }
   }
 
-  .test2{
+  .test2 {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
     justify-content: center;
-    background-color: orangered;
+    gap: 2rem;
+    position: relative;
 
-    .mover{
-      position: absolute;
-      top: inherit;
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 1rem;
+      position: relative;
+      background-color: $white;
+      // top: 200px;
+
+      h3{
+        max-inline-size: 12ch;
+      }
     }
   }
 }
+
