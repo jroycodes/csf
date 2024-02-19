@@ -244,3 +244,70 @@ header {
     }
   }
 }
+
+// SECTION 6
+.howWeWork {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 3.125rem;
+
+  .weWork {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+
+    div p {
+      max-inline-size: 28ch;
+    }
+  }
+}
+
+// SECTION 7
+.newsLetter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+
+  .news1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2.5rem 3.5rem;
+    background-color: $primary-color;
+
+    button {
+      color: $primary-color;
+      background-color: $white;
+      padding: 10.7053px 22.6px;
+    }
+
+  }
+
+  .news2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    #news h2 {
+      margin-bottom: 1rem;
+    }
+
+    #input {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      input {
+        padding: 1.125rem 16.563rem 1rem 1.188rem;
+      }
+    }
+
+    p {
+      max-inline-size: 31ch;
+    }
+  }
+}
