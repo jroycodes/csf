@@ -475,4 +475,68 @@ header .content ul ul:hover {
 }
 .join div input {
   padding: 1.125rem 16.563rem 1rem 1.188rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #020202;
+}
+.footer h3,
+.footer p {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.footer .intro div {
+  display: flex;
+  gap: 1rem;
+}
+.footer .company {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3.188rem;
+}
+.footer .company div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer .company div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style-type: none;
+}
+.footer .company div ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .extra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer .extra ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  list-style-type: none;
+}
+.footer .extra ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .follow {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */

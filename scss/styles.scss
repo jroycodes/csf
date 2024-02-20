@@ -413,3 +413,79 @@ header {
     }
   }
 }
+
+// FOOTER
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: $black;
+
+  h3,
+  p {
+    color: $white2;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  .company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3.188rem;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: $white2;
+        }
+      }
+    }
+  }
+
+  .extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: $white2;
+      }
+    }
+  }
+
+  .follow {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
