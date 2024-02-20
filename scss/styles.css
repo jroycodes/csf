@@ -132,7 +132,6 @@ a:hover {
 
 body {
   margin: 1rem;
-  background-color: #f3f2e7;
   font-family: "DM Sans", sans-serif;
 }
 
@@ -480,6 +479,7 @@ header .content ul ul:hover {
 .footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 2rem;
   background-color: #020202;
 }
