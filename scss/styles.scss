@@ -252,14 +252,24 @@ header {
   align-items: center;
   gap: 3.125rem;
 
+  h3:first-child {
+    color: $primary-color;
+  }
+
   .weWork {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 1.5rem;
 
-    div p {
-      max-inline-size: 28ch;
+    div {
+      h3 {
+        margin: 0.6rem 0;
+      }
+
+      p {
+        max-inline-size: 28ch;
+      }
     }
   }
 }
