@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gohelp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="scss/styles.css" />
+    <link rel="stylesheet" href="scss/blog.css" />
+    <link rel="stylesheet" href="scss/blogDetails.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="assets/mobile/icon.svg" alt="Gohelp icon" />
+          </a>
+        </div>
+      </nav>
+      <!-- SIDEBAR -->
+      <div class="menu">
+        <!-- Open sidebar -->
+        <div id="main">
+          <button>
+            <img
+              src="assets/mobile/Menu.svg"
+              alt=""
+              class="menu-button"
+              id="button"
+              onclick="openNav()"
+            />
+          </button>
+        </div>
+        <!-- Close sidebar -->
+        <div id="mySidebar" class="sidebar">
+          <div class="closebtn" onclick="closeNav()">&#128473;</div>
+          <ul class="baritem">
+            <li><a href="index.html">Home</a></li>
+            <li class="vector">
+              <span class="toggle-button" onclick="toggleListItem(this);">
+                Pages <i class="fa-solid fa-angle-down fa-xs"></i>
+              </span>
+              <div class="content" style="display: none">
+                <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="team.html">Team member</a></li>
+                  <li><a href="volunteer.html">Become a volunteer</a></li>
+                  <li><a href="questions.html">FAQ</a></li>
+                  <li><a href="notfound.html">404</a></li>
+                  <li><a href="comingsoon.html">Coming soon </a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="blogDetails_1">
+        <div>
+          <a href="blog.html"
+            ><i class="fa-solid fa-arrow-left-long"></i> All blogs</a
+          >
+          <h3>Do changes to the immigration system look after children?</h3>
+          <p>Published in August 25, 2022</p>
+          <picture>
+            <source
+              class="Desktop"
+              srcset="assets/Desktop/blogDetails1.jpg"
+              media="(min-width: 62rem)"
+            />
+            <img src="assets/mobile/blogDetails1.jpg" alt="" />
+          </picture>
+        </div>
+        <div>
+          <p>
+            For most children, time after school and on the weekends is
+            precious. It's time spent with friends, playing games or taking part
+            in hobbies and activities. But not so for many disabled children,
+            who miss out on these experiences.
+          </p>
+          <p>
+            Debra Sodano is the service coordinator for Action for Children's
+            Social Opportunities project in Bury. She tells us how this project
+            provides a space for disabled children, aged 5-18, to socialise and
+            play.
+          </p>
+        </div>
+        <div>
+          <h3>Social Opportunities they would otherwise miss out on.</h3>
+          <p>
+            Explaining how the service works, Debra says, “Many of our young
+            people will make and see their friends in school. But unlike other
+            children who can then play out unsupervised, or go to the cinema
+            together.
+          </p>
+
+          <div class="video-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/bfAzi6D5FpM"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div>
+            <h3>Award-winning team</h3>
+            <p>
+              The team's dedication to go above and beyond has not gone
+              unnoticed. Debra could share countless bits of positive feedback
+              from the families. Hearing how the service helps the children and
+              their families is one of her favourite parts of the job.
+            </p>
+          </div>
+          <div>
+            <h3>Support Action for Children</h3>
+            <p>
+              Our support is a vital lifeline to thousands of families across
+              the UK. But there are so many more who need us to be there. We can
+              reach them, with your help.
+            </p>
+          </div>
+          <div class="blogDetails_2">
+            <div>
+              <h2>Donate</h2>
+              <p>
+                Help us be a vital lifeline for children, young people and
+                families
+              </p>
+            </div>
+            <button>Donate now</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Related Blogs</h3>
+        <div class="blog_2">
+          <div>
+            <picture>
+              <source
+                class="Desktop"
+                srcset="assets/Desktop/blog2.jpg"
+                media="(min-width: 62rem)"
+              />
+              <img src="assets/mobile/blog2.jpg" alt="" />
+            </picture>
+            <p>27 July 2023</p>
+            <h3>Keeping young people safe from exploitation</h3>
+            <p>
+              The movement for climate justice is stronger than ever, which we
+              saw in full force when school students...
+            </p>
+            <a href="blog.html"
+              >Read more <i class="fa-solid fa-arrow-right-long fa-xs"></i
+            ></a>
+          </div>
+          <div>
+            <picture>
+              <source
+                class="Desktop"
+                srcset="assets/Desktop/blog3.jpg"
+                media="(min-width: 62rem)"
+              />
+              <img src="assets/mobile/blog3.jpg" alt="" />
+            </picture>
+            <p>12 July 2023</p>
+            <h3>The unseen effects of knife crime on children</h3>
+            <p>
+              The movement for climate justice is stronger than ever, which we
+              saw in full force when school students...
+            </p>
+            <a href="blog.html"
+              >Read more <i class="fa-solid fa-arrow-right-long fa-xs"></i
+            ></a>
+          </div>
+          <div>
+            <picture>
+              <source
+                class="Desktop"
+                srcset="assets/Desktop/blog4.jpg"
+                media="(min-width: 62rem)"
+              />
+              <img src="assets/mobile/blog4.jpg" alt="" />
+            </picture>
+            <p>7 July 2023</p>
+            <h3>Supporting young people with self-acceptance</h3>
+            <p>
+              The movement for climate justice is stronger than ever, which we
+              saw in full force when school students...
+            </p>
+            <a href="blog.html"
+              >Read more <i class="fa-solid fa-arrow-right-long fa-xs"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="intro">
+        <a href="index.html">
+          <img src="assets/mobile/footerIcon.svg" alt="Gohelp icon" />
+        </a>
+        <p>Connect with us</p>
+        <div>
+          <img src="assets/mobile/phone.svg" alt="Phone icon" />
+          <p>0000 000 000</p>
+        </div>
+        <div>
+          <img src="assets/mobile/mail.svg" alt="Mail icon" />
+          <p>gmail234@gmail.com</p>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Non-profits</h3>
+          <ul>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="extra">
+        <h3>Extra Link</h3>
+        <ul>
+          <li><a href="chooseUs.html">Why Choose Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="donate.html">Donate Now</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="apply.html">Start an Application</a></li>
+        </ul>
+      </div>
+      <div class="follow">
+        <h3>Follow us</h3>
+        <div>
+          <a href="twitter.com"
+            ><img src="assets/mobile/twitter.svg" alt="Twitter icon"
+          /></a>
+          <a href="instagram.com"
+            ><img src="assets/mobile/instagram.svg" alt="Instagram icon"
+          /></a>
+          <a href="Facebook.com"
+            ><img src="assets/mobile/facebook.svg" alt="Facebook icon"
+          /></a>
+          <a href="linkedin.com"
+            ><img src="assets/mobile/linkedin.svg" alt="Linkedin icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
