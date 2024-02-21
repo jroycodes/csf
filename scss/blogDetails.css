@@ -197,4 +197,8 @@ a:hover {
 .blogDetails_2 div p {
   text-align: center;
   max-inline-size: 26ch;
+}
+
+#related {
+  margin-bottom: 1.5rem;
 }/*# sourceMappingURL=blogDetails.css.map */
