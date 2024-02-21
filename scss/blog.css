@@ -134,6 +134,12 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 2rem;
+}
+.blog_1 #blog {
+  text-align: center;
+  color: #00715d;
+  margin-bottom: 2rem;
 }
 .blog_1 h2 {
   max-inline-size: 18ch;
