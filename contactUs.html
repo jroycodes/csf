@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gohelp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="scss/blog.css" />
+    <link rel="stylesheet" href="scss/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="assets/mobile/icon.svg" alt="Gohelp icon" />
+          </a>
+        </div>
+      </nav>
+      <!-- SIDEBAR -->
+      <div class="menu">
+        <!-- Open sidebar -->
+        <div id="main">
+          <button>
+            <img
+              src="assets/mobile/Menu.svg"
+              alt=""
+              class="menu-button"
+              id="button"
+              onclick="openNav()"
+            />
+          </button>
+        </div>
+        <!-- Close sidebar -->
+        <div id="mySidebar" class="sidebar">
+          <div class="closebtn" onclick="closeNav()">&#128473;</div>
+          <ul class="baritem">
+            <li><a href="index.html">Home</a></li>
+            <li class="vector">
+              <span class="toggle-button" onclick="toggleListItem(this);">
+                Pages <i class="fa-solid fa-angle-down fa-xs"></i>
+              </span>
+              <div class="content" style="display: none">
+                <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="team.html">Team member</a></li>
+                  <li><a href="volunteer.html">Become a volunteer</a></li>
+                  <li><a href="questions.html">FAQ</a></li>
+                  <li><a href="notfound.html">404</a></li>
+                  <li><a href="comingsoon.html">Coming soon </a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="join">
+        <h2>Send us a Message</h2>
+        <div>
+          <div class="names">
+            <div>
+              <p>First Name</p>
+              <input type="text" class="firstName" placeholder="First Name" />
+            </div>
+            <div>
+              <p>Last name</p>
+              <input type="text" class="lastName" placeholder="Last Name" />
+            </div>
+          </div>
+          <div>
+            <p>Email</p>
+            <input
+              type="email"
+              class="email"
+              placeholder="johndoe@gmail.com.com"
+              required
+            />
+          </div>
+          <div>
+            <p>Your Subject</p>
+            <input type="text" class="donation" placeholder="ie Donation" />
+          </div>
+          <div>
+            <p>Message</p>
+            <textarea
+              name="message"
+              id="message"
+              cols="60"
+              rows="8"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button>Send message</button>
+        </div>
+      </section>
+      <section class="howWeWork">
+        <h3>Contact us</h3>
+        <h2>Get more information</h2>
+        <div class="weWork">
+          <div>
+            <img
+              src="assets/mobile/location2.svg"
+              alt="Community center icon"
+            />
+            <h3>Our office:</h3>
+            <p>899 North Capitol Street</p>
+          </div>
+          <div>
+            <img src="assets/mobile/phone2.svg" alt="Data icon" />
+            <h3>Phone</h3>
+            <p>+00 (000) 000 00</p>
+            <p>+00 (000) 000 00</p>
+          </div>
+          <div>
+            <img src="assets/mobile/mail2.svg" alt="Support icon" />
+            <h3>Email <Address></Address></h3>
+            <p>
+              Speak to our friendly team.
+            </p>
+            <p>
+              support@example.com
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="intro">
+        <a href="index.html">
+          <img src="assets/mobile/footerIcon.svg" alt="Gohelp icon" />
+        </a>
+        <p>Connect with us</p>
+        <div>
+          <img src="assets/mobile/phone.svg" alt="Phone icon" />
+          <p>0000 000 000</p>
+        </div>
+        <div>
+          <img src="assets/mobile/mail.svg" alt="Mail icon" />
+          <p>gmail234@gmail.com</p>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Non-profits</h3>
+          <ul>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="extra">
+        <h3>Extra Link</h3>
+        <ul>
+          <li><a href="chooseUs.html">Why Choose Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="donate.html">Donate Now</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="apply.html">Start an Application</a></li>
+        </ul>
+      </div>
+      <div class="follow">
+        <h3>Follow us</h3>
+        <div>
+          <a href="twitter.com"
+            ><img src="assets/mobile/twitter.svg" alt="Twitter icon"
+          /></a>
+          <a href="instagram.com"
+            ><img src="assets/mobile/instagram.svg" alt="Instagram icon"
+          /></a>
+          <a href="Facebook.com"
+            ><img src="assets/mobile/facebook.svg" alt="Facebook icon"
+          /></a>
+          <a href="linkedin.com"
+            ><img src="assets/mobile/linkedin.svg" alt="Linkedin icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
