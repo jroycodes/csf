@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gohelp</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="scss/styles.css" />
+    <link rel="stylesheet" href="scss/volunteer.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img src="assets/mobile/icon.svg" alt="Gohelp icon" />
+          </a>
+        </div>
+      </nav>
+      <!-- SIDEBAR -->
+      <div class="menu">
+        <!-- Open sidebar -->
+        <div id="main">
+          <button>
+            <img
+              src="assets/mobile/Menu.svg"
+              alt=""
+              class="menu-button"
+              id="button"
+              onclick="openNav()"
+            />
+          </button>
+        </div>
+        <!-- Close sidebar -->
+        <div id="mySidebar" class="sidebar">
+          <div class="closebtn" onclick="closeNav()">&#128473;</div>
+          <ul class="baritem">
+            <li><a href="index.html">Home</a></li>
+            <li class="vector">
+              <span class="toggle-button" onclick="toggleListItem(this);">
+                Pages <i class="fa-solid fa-angle-down fa-xs"></i>
+              </span>
+              <div class="content" style="display: none">
+                <ul>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="team.html">Team member</a></li>
+                  <li><a href="volunteer.html">Become a volunteer</a></li>
+                  <li><a href="questions.html">FAQ</a></li>
+                  <li><a href="notfound.html">404</a></li>
+                  <li><a href="comingsoon.html">Coming soon </a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="causes.html">Causes</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactUs.html">Contact us</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="first">
+        <div>
+          <h1>Benefits of being a volunteer</h1>
+          <ul>
+            <li>Develop new skills and knowledge</li>
+            <li>Foster a connection with the children</li>
+            <li>Increased Empathy and Compassion</li>
+            <li>Improved mental health</li>
+          </ul>
+        </div>
+        <div>
+          <picture>
+            <source
+              class="Desktop"
+              srcset="assets\desktop\volunteer1.jpg"
+              media="(min-width: 62rem)"
+            />
+            <img src="assets/mobile/volunteer1.jpg" alt="Children smilling" />
+          </picture>
+        </div>
+      </section>
+      <section class="volunteer_1">
+        <div class="volunteer_div1">
+          <h2>Register in:</h2>
+          <p id="vol_1">
+            Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil
+            expetendis in mei. Mei an pericula euripidis.
+          </p>
+          <div>
+            <h3>Requirements</h3>
+            <p>
+              Alienum phaedrum torquatos nec eu, vis detraxit periculis ex,
+              nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei
+              est. Eos ei nisl graecis, vix aperiri consequat anlorem tincidunt
+              vix at.
+            </p>
+            <ul>
+              <li>Eos ei nisl graecis, vix aperiri consequat.</li>
+              <li>Eos ei nisl graecis, vix aperiri consequat.</li>
+              <li>Eos ei nisl graecis, vix aperiri consequat.</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Process</h3>
+            <p>
+              Alienum phaedrum torquatos nec eu, vis detraxit periculis ex,
+              nihil expetendis in mei. Mei an pericula euripidis, hinc partem ei
+              est. Eos ei nisl graecis, vix aperiri consequat anlorem tincidunt
+              vix at.
+            </p>
+            <div id="tel">
+              <img src="assets/mobile/phone.svg" alt="Phone icon" />
+              <p>0000 000 000</p>
+            </div>
+            <div id="tel">
+              <img src="assets/mobile/mail.svg" alt="Mail icon" />
+              <p>gmail234@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="join">
+          <form action="">
+            <div>
+              <p>First Name</p>
+              <input type="text" class="name" placeholder="First name" />
+            </div>
+            <div>
+              <p>Last Name</p>
+              <input type="text" class="name" placeholder="Last name" />
+            </div>
+            <div>
+              <p>Email</p>
+              <input
+                type="email"
+                class="email"
+                placeholder="email.12345@gmail.com"
+                required
+              />
+            </div>
+            <div>
+              <p>Phone number</p>
+              <input type="tel" class="tel" placeholder="00 000 0000" />
+            </div>
+            <div>
+              <p>Address</p>
+              <input type="text" class="address" placeholder="Address" />
+            </div>
+            <div>
+              <p>Date of Birth</p>
+              <input type="date" class="date" placeholder="" />
+            </div>
+            <div>
+              <p>Occupation</p>
+              <input type="text" class="occupation" placeholder="Teacher" />
+            </div>
+            <div>
+              <button>Submit Now</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="intro">
+        <a href="index.html">
+          <img src="assets/mobile/footerIcon.svg" alt="Gohelp icon" />
+        </a>
+        <p>Connect with us</p>
+        <div>
+          <img src="assets/mobile/phone.svg" alt="Phone icon" />
+          <p>0000 000 000</p>
+        </div>
+        <div>
+          <img src="assets/mobile/mail.svg" alt="Mail icon" />
+          <p>gmail234@gmail.com</p>
+        </div>
+      </div>
+      <div class="company">
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contactUs.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Non-profits</h3>
+          <ul>
+            <li><a href="causes.html">Our Causes</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="mission.html">Our Mission</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="extra">
+        <h3>Extra Link</h3>
+        <ul>
+          <li><a href="chooseUs.html">Why Choose Us</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="donate.html">Donate Now</a></li>
+          <li><a href="leadership.html">Leadership</a></li>
+          <li><a href="apply.html">Start an Application</a></li>
+        </ul>
+      </div>
+      <div class="follow">
+        <h3>Follow us</h3>
+        <div>
+          <a href="twitter.com"
+            ><img src="assets/mobile/twitter.svg" alt="Twitter icon"
+          /></a>
+          <a href="instagram.com"
+            ><img src="assets/mobile/instagram.svg" alt="Instagram icon"
+          /></a>
+          <a href="Facebook.com"
+            ><img src="assets/mobile/facebook.svg" alt="Facebook icon"
+          /></a>
+          <a href="linkedin.com"
+            ><img src="assets/mobile/linkedin.svg" alt="Linkedin icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: clamp(3.375rem, 5vw, 6.25rem);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+p {
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+button {
+  background-color: #00715d;
+  border: none;
+  color: #ffffff;
+  padding: 1.125rem 2.375rem;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+section {
+  margin-top: 3.625rem;
+  margin-bottom: 3.625rem;
+}
+
+img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-inline-size: 100%;
+}
+
+.sidebar {
+  position: fixed;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 3.75rem;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.baritem {
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.baritem a {
+  text-decoration: none;
+  color: #020202;
+}
+
+a:hover {
+  color: #00715d;
+  text-decoration: underline;
+}
+
+.sidebar div {
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 1.56rem;
+  font-size: 36px;
+  float: left;
+}
+
+.closebtn {
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #00715d;
+}
+
+.openbtn:hover {
+  color: purple;
+}
+
+.baritem:active {
+  background-color: white;
+}
+
+.openbtn {
+  display: block;
+  font-size: 1.7rem;
+  cursor: pointer;
+  float: right;
+  background-color: black;
+  border: none;
+}
+
+.openbtn.hide {
+  display: none;
+}
+
+#main {
+  position: relative;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.first h1 {
+  margin-bottom: 1.5rem;
+}
+
+.volunteer_1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+}
+.volunteer_1 .volunteer_div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.volunteer_1 .volunteer_div1 h2 {
+  text-align: center;
+}
+.volunteer_1 .volunteer_div1 #vol_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-inline-size: 58ch;
+}
+.volunteer_1 .volunteer_div1 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.volunteer_1 .volunteer_div1 div p {
+  max-inline-size: 36ch;
+}
+.volunteer_1 .volunteer_div1 div #tel {
+  display: flex;
+  flex-direction: row;
+}
+.volunteer_1 .volunteer_div1 div #tel img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-inline-size: 10%;
+}/*# sourceMappingURL=volunteer.css.map */

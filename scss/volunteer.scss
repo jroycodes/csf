@@ -1,0 +1,52 @@
+@import "./resets.scss";
+@import "./variables.scss";
+@import "./sidebars";
+
+.first h1 {
+  margin-bottom: 1.5rem;
+}
+
+.volunteer_1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+
+  .volunteer_div1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h2 {
+      text-align: center;
+    }
+
+    #vol_1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      max-inline-size: 58ch;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      p {
+        max-inline-size: 36ch;
+      }
+
+      #tel {
+        display: flex;
+        flex-direction: row;
+
+        img {
+          object-fit: contain;
+          max-inline-size: 10%;
+        }
+      }
+    }
+  }
+}
