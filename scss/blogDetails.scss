@@ -15,7 +15,7 @@
         color: $primary-color;
 
         i {
-            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
           }
     }
     
@@ -25,12 +25,12 @@
 
     h3 {
       max-inline-size: 36ch;
-      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
 
     p {
       max-inline-size: 58ch;
-      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }
@@ -40,7 +40,7 @@
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
-  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .video-container iframe {
@@ -81,5 +81,5 @@
 }
 
 #related{
-  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
 }

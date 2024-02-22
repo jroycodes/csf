@@ -1,91 +1,108 @@
 // SIDE BAR
 .sidebar {
-    position: fixed;
-    max-height: fit-content;
-    width: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    padding-top: 3.75rem;
-    z-index: 1;
-    background-color: $white;
+  position: fixed;
+  max-height: fit-content;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  padding-top: 3.75rem;
+  z-index: 1;
+  background-color: $white;
+}
+
+.baritem {
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: $black;
   }
+}
+
+a:hover {
+  color: $primary-color;
+  text-decoration: underline;
+}
+
+.sidebar div {
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 1.56rem;
+  font-size: 36px;
+  float: left;
+}
+
+.closebtn {
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: $primary-color;
+}
+
+.openbtn:hover {
+  color: purple;
+}
+
+.baritem:active {
+  background-color: white;
+}
+
+.openbtn {
+  display: block;
+  font-size: 1.7rem;
+  cursor: pointer;
+  float: right;
+  background-color: black;
+  border: none;
+}
+
+.openbtn.hide {
+  display: none;
+}
+
+#main {
+  position: relative;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.menu {
+  position: relative;
+}
+
+.vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
   
-  .baritem {
-    padding: 0.5rem 1.8rem 0.5rem 1.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
-    cursor: pointer;
-    text-align: left;
-    font-size: 1.5rem;
-  
-    a {
-      text-decoration: none;
-      color: $black;
-    }
-  }
-  
-  a:hover {
-    color: $primary-color;
-    text-decoration: underline;
-  }
-  
-  .sidebar div {
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .sidebar .closebtn {
+
+  .content {
     position: absolute;
-    top: 0;
-    left: 1.56rem;
-    font-size: 36px;
-    float: left;
+    width: 173px;
+    height: 280px;
+    top: 70px;
+    background: $white;
   }
-  
-  .closebtn {
-    cursor: pointer;
-  }
-  
-  .closebtn:hover {
-    color: $primary-color;
-  }
-  
-  .openbtn:hover {
-    color: purple;
-  }
-  
-  .baritem:active {
-    background-color: white;
-  }
-  
-  .openbtn {
-    display: block;
-    font-size: 1.7rem;
-    cursor: pointer;
-    float: right;
-    background-color: black;
-    border: none;
-  }
-  
-  .openbtn.hide {
-    display: none;
-  }
-  
-  #main {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .hide{
-    display: none;
-  }
-  
-  .menu{
-    position: relative;
-  }
+}

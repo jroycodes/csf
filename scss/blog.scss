@@ -11,17 +11,17 @@
   #blog{
     text-align: center;
     color: $primary-color;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
   }
 
   h2 {
     max-inline-size: 18ch;
-    margin: 1.375rem 0 1rem 0;
+    padding: 1.375rem 0 1rem 0;
   }
 
   p {
     max-inline-size: 40ch;
-    margin-bottom: 2.625rem;
+    padding-bottom: 2.625rem;
   }
 }
 
@@ -32,18 +32,18 @@
   gap: 1.5rem;
 
   p:first-of-type{
-    margin-top: 1.3rem;
+    padding-top: 1.3rem;
   }
   
 
   h3 {
     max-inline-size: 21ch;
-    margin: 0.25rem 0 1rem 0;
+    padding: 0.25rem 0 1rem 0;
   }
 
   p {
     max-inline-size: 36ch;
-    margin-bottom: 1.625rem;
+    padding-bottom: 1.625rem;
   }
 
   a{

@@ -29,8 +29,9 @@ button {
 }
 
 section {
-  margin-top: 3.625rem;
-  margin-bottom: 3.625rem;
+  padding: 1rem;
+  padding-top: 3.625rem;
+  padding-bottom: 3.625rem;
 }
 
 img {
@@ -130,6 +131,21 @@ a:hover {
   position: relative;
 }
 
+.vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.vector .content {
+  position: absolute;
+  width: 173px;
+  height: 280px;
+  top: 70px;
+  background: #ffffff;
+}
+
 .causes_1 {
   display: flex;
   flex-wrap: wrap;
@@ -137,7 +153,7 @@ a:hover {
 }
 .causes_1 h2 {
   max-inline-size: 12ch;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .causes_2 {

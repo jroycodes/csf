@@ -29,8 +29,9 @@ button {
 }
 
 section {
-  margin-top: 3.625rem;
-  margin-bottom: 3.625rem;
+  padding: 1rem;
+  padding-top: 3.625rem;
+  padding-bottom: 3.625rem;
 }
 
 img {
@@ -130,6 +131,21 @@ a:hover {
   position: relative;
 }
 
+.vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.vector .content {
+  position: absolute;
+  width: 173px;
+  height: 280px;
+  top: 70px;
+  background: #ffffff;
+}
+
 .aboutUs_1 {
   display: flex;
   flex-direction: column;
@@ -141,11 +157,11 @@ a:hover {
   max-inline-size: 16ch;
 }
 .aboutUs_1 div:first-child p {
-  margin-top: 1rem;
+  padding-top: 1rem;
   max-inline-size: 48ch;
 }
 .aboutUs_1 div:first-child button {
-  margin-top: 2.625rem;
+  padding-top: 2.625rem;
 }
 
 .aboutUs_2 {

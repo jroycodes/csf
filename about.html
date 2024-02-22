@@ -13,51 +13,76 @@
   <link rel="stylesheet" href="scss/styles.css" />
   <body>
     <header>
-      <nav>
-        <div>
-          <a href="index.html">
-            <img src="assets/mobile/icon.svg" alt="Gohelp icon" />
-          </a>
+      <div class="header">
+        <nav>
+          <div>
+            <a href="index.html">
+              <img src="assets/mobile/icon.svg" alt="Gohelp icon" />
+            </a>
+          </div>
+        </nav>
+        <!-- SIDEBAR -->
+        <div class="menu">
+          <!-- Open sidebar -->
+          <div id="main">
+            <button>
+              <img
+                src="assets/mobile/Menu.svg"
+                alt=""
+                class="menu-button"
+                id="button"
+                onclick="openNav()"
+              />
+            </button>
+          </div>
+          <!-- Close sidebar -->
+          <div id="mySidebar" class="sidebar">
+            <div class="closebtn" onclick="closeNav()">&#128473;</div>
+            <ul class="baritem">
+              <li><a href="index.html">Home</a></li>
+              <li class="vector">
+                <span class="toggle-button" onclick="toggleListItem(this);">
+                  Pages <i class="fa-solid fa-angle-down fa-xs"></i>
+                </span>
+                <div class="content" style="display: none">
+                  <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team member</a></li>
+                    <li><a href="volunteer.html">Become a volunteer</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                    <li><a href="notfound.html">404</a></li>
+                    <li><a href="comingsoon.html">Coming soon </a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="causes.html">Causes</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+          </div>
         </div>
-      </nav>
-      <!-- SIDEBAR -->
-      <div class="menu">
-        <!-- Open sidebar -->
-        <div id="main">
-          <button>
-            <img
-              src="assets/mobile/Menu.svg"
-              alt=""
-              class="menu-button"
-              id="button"
-              onclick="openNav()"
-            />
-          </button>
-        </div>
-        <!-- Close sidebar -->
-        <div id="mySidebar" class="sidebar">
-          <div class="closebtn" onclick="closeNav()">&#128473;</div>
-          <ul class="baritem">
+        <div class="desktop_nav">
+          <ul id="nav_ul">
             <li><a href="index.html">Home</a></li>
-            <li class="vector">
-              <span class="toggle-button" onclick="toggleListItem(this);">
-                Pages <i class="fa-solid fa-angle-down fa-xs"></i>
-              </span>
-              <div class="content" style="display: none">
-                <ul>
-                  <li><a href="about.html">About us</a></li>
-                  <li><a href="blog.html">Blog</a></li>
-                  <li><a href="team.html">Team member</a></li>
-                  <li><a href="volunteer.html">Become a volunteer</a></li>
-                  <li><a href="questions.html">FAQ</a></li>
-                  <li><a href="notfound.html">404</a></li>
-                  <li><a href="comingsoon.html">Coming soon </a></li>
-                </ul>
-              </div>
-            </li>
-            <li><a href="causes.html">Causes</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contactUs.html">Contact us</a></li>
+              <li class="vector" id="vector">
+                <span class="toggle-button" onclick="toggleListItem(this);">
+                  Pages <i class="fa-solid fa-angle-down fa-xs"></i>
+                </span>
+                <div class="content" style="display: none">
+                  <ul>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="team.html">Team member</a></li>
+                    <li><a href="volunteer.html">Become a volunteer</a></li>
+                    <li><a href="questions.html">FAQ</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="causes.html">Causes</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contactUs.html">Contact us</a></li>
+              <button>DONATE NOW</button>
           </ul>
         </div>
       </div>
