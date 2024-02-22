@@ -3,16 +3,19 @@
 @import "./sidebars";
 
 body {
-  margin: 1rem;
   font-family: "DM Sans", sans-serif;
+  height: 100vh;
+  max-height: 100vh;
 }
 
 // HEADER SECTION
 header {
+  padding: 1rem;
+}
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
 
   ul {
     list-style: none;
@@ -24,7 +27,7 @@ header {
   }
 
   .content ul {
-    margin: 1rem 0 0 0;
+    padding: 1rem 0 0 0;
     padding-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -36,7 +39,21 @@ header {
       text-decoration: underline;
     }
   }
+
+  .desktop_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2.25rem;
+  
+    button {
+      background-color: $black;
+    }
+  }
 }
+
+
 
 // SECTION ONE
 .first,
@@ -44,7 +61,6 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
   gap: 3.5rem;
 
   h1 {
@@ -53,7 +69,7 @@ header {
 
   p {
     max-inline-size: 30ch;
-    margin: 1rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
   }
 }
 
@@ -73,7 +89,7 @@ header {
     }
 
     p {
-      margin: 1rem 0 2rem 0;
+      padding: 1rem 0 2rem 0;
       max-inline-size: 58ch;
     }
 
@@ -108,14 +124,14 @@ header {
 
     p {
       max-inline-size: 27ch;
-      margin-top: 3rem;
-      margin-left: 3.125rem;
+      padding-top: 3rem;
+      padding-left: 3.125rem;
     }
 
     a {
       text-align: left;
-      margin-bottom: 3rem;
-      margin-left: 3.125rem;
+      padding-bottom: 3rem;
+      padding-left: 3.125rem;
     }
 
     a {
@@ -264,7 +280,7 @@ header {
 
     div {
       h3 {
-        margin: 0.6rem 0;
+        padding: 0.6rem 0;
       }
 
       p {
@@ -301,7 +317,7 @@ header {
     gap: 2.5rem;
 
     #news h2 {
-      margin-bottom: 1rem;
+      padding-bottom: 1rem;
     }
 
     #input {
@@ -310,7 +326,7 @@ header {
       gap: 1rem;
 
       input {
-        padding: 1.125rem 16.563rem 1rem 1.188rem;
+        padding: 1.125rem 12.563rem 1rem 1rem;
       }
     }
 
@@ -403,7 +419,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
 
   div {
@@ -418,7 +433,7 @@ header {
     }
 
     input {
-      padding: 1.125rem 16.563rem 1rem 1.188rem;
+      padding: 1.125rem 12.563rem 1rem 1rem;
     }
   }
 }
@@ -497,5 +512,23 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+  }
+}
+
+// MEDIA QUERY
+@media screen and (min-width: 90rem) {
+  body {
+    max-width: 90rem;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  .desktop_nav {
+    display: none;
   }
 }

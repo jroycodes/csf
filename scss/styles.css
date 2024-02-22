@@ -29,8 +29,9 @@ button {
 }
 
 section {
-  margin-top: 3.625rem;
-  margin-bottom: 3.625rem;
+  padding: 1rem;
+  padding-top: 3.625rem;
+  padding-bottom: 3.625rem;
 }
 
 img {
@@ -130,35 +131,64 @@ a:hover {
   position: relative;
 }
 
+.vector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.vector .content {
+  position: absolute;
+  width: 173px;
+  height: 280px;
+  top: 70px;
+  background: #ffffff;
+}
+
 body {
-  margin: 1rem;
   font-family: "DM Sans", sans-serif;
+  height: 100vh;
+  max-height: 100vh;
 }
 
 header {
+  padding: 1rem;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
 }
-header ul {
+.header ul {
   list-style: none;
 }
-header button {
+.header button {
   border: none;
   background-color: #f3f2e7;
 }
-header .content ul {
-  margin: 1rem 0 0 0;
+.header .content ul {
+  padding: 1rem 0 0 0;
   padding-left: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   overflow: hidden;
 }
-header .content ul ul:hover {
+.header .content ul ul:hover {
   color: #00715d;
   text-decoration: underline;
+}
+.header .desktop_nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2.25rem;
+}
+.header .desktop_nav ul button {
+  background-color: #020202;
 }
 
 .first,
@@ -166,7 +196,6 @@ header .content ul ul:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  align-items: center;
   gap: 3.5rem;
 }
 .first h1,
@@ -176,7 +205,7 @@ header .content ul ul:hover {
 .first p,
 .second p {
   max-inline-size: 30ch;
-  margin: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
 }
 
 #second .charity {
@@ -191,7 +220,7 @@ header .content ul ul:hover {
   max-inline-size: 14ch;
 }
 #second .charity p {
-  margin: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
   max-inline-size: 58ch;
 }
 #second .charity a {
@@ -221,13 +250,13 @@ header .content ul ul:hover {
 }
 .section3 .initiatives p {
   max-inline-size: 27ch;
-  margin-top: 3rem;
-  margin-left: 3.125rem;
+  padding-top: 3rem;
+  padding-left: 3.125rem;
 }
 .section3 .initiatives a {
   text-align: left;
-  margin-bottom: 3rem;
-  margin-left: 3.125rem;
+  padding-bottom: 3rem;
+  padding-left: 3.125rem;
 }
 .section3 .initiatives a {
   color: #ffffff;
@@ -349,7 +378,7 @@ header .content ul ul:hover {
   gap: 1.5rem;
 }
 .howWeWork .weWork div h3 {
-  margin: 0.6rem 0;
+  padding: 0.6rem 0;
 }
 .howWeWork .weWork div p {
   max-inline-size: 28ch;
@@ -379,7 +408,7 @@ header .content ul ul:hover {
   gap: 2.5rem;
 }
 .newsLetter .news2 #news h2 {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 .newsLetter .news2 #input {
   display: flex;
@@ -387,7 +416,7 @@ header .content ul ul:hover {
   gap: 1rem;
 }
 .newsLetter .news2 #input input {
-  padding: 1.125rem 16.563rem 1rem 1.188rem;
+  padding: 1.125rem 12.563rem 1rem 1rem;
 }
 .newsLetter .news2 p {
   max-inline-size: 31ch;
@@ -465,7 +494,6 @@ header .content ul ul:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 2rem;
 }
 .join div {
@@ -479,7 +507,7 @@ header .content ul ul:hover {
   flex-wrap: wrap;
 }
 .join div input {
-  padding: 1.125rem 16.563rem 1rem 1.188rem;
+  padding: 1.125rem 12.563rem 1rem 1rem;
 }
 
 .footer {
@@ -545,4 +573,20 @@ header .content ul ul:hover {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+}
+
+@media screen and (min-width: 90rem) {
+  body {
+    max-width: 90rem;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 36rem) {
+  .desktop_nav {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
