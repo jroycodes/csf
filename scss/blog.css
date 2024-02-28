@@ -85,7 +85,7 @@ a:hover {
   position: absolute;
   top: 0;
   left: 1.56rem;
-  font-size: 36px;
+  font-size: 2.25rem;
   float: left;
 }
 
@@ -134,15 +134,15 @@ a:hover {
 .vector {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   cursor: pointer;
 }
 .vector .content {
   position: absolute;
-  width: 173px;
-  height: 280px;
-  top: 70px;
+  width: 10.813rem;
+  height: 17.5rem;
+  top: 4.375rem;
   background: #ffffff;
 }
 
