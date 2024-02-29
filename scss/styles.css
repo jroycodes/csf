@@ -187,6 +187,9 @@ header {
   align-items: center;
   gap: 2.25rem;
 }
+.header .desktop_nav ul a {
+  text-decoration: none;
+}
 .header .desktop_nav ul button {
   background-color: #020202;
 }
@@ -196,6 +199,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   gap: 3.5rem;
 }
 .first h1,
@@ -299,7 +303,7 @@ header {
 .section4 .helpus a {
   color: #00715d;
 }
-.section4 .helpus .mission h1 {
+.section4 .helpus .mission h2 {
   max-inline-size: 10ch;
 }
 
@@ -416,7 +420,7 @@ header {
   gap: 1rem;
 }
 .newsLetter .news2 #input input {
-  padding: 1.125rem 12.563rem 1rem 1rem;
+  padding: 1.125rem 6.563rem 1rem 1rem;
 }
 .newsLetter .news2 p {
   max-inline-size: 31ch;
@@ -507,7 +511,7 @@ header {
   flex-wrap: wrap;
 }
 .join div input {
-  padding: 1.125rem 12.563rem 1rem 1rem;
+  padding: 1.125rem 2.563rem 1rem 1rem;
 }
 
 .footer {
