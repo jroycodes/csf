@@ -324,7 +324,7 @@ header,
     button {
       color: $primary-color;
       background-color: $white;
-      padding: 10.7053px 22.6px;
+      padding: 0.669rem 1.413rem;
     }
   }
   /* Group 38 */
@@ -383,8 +383,7 @@ header,
       gap: 1rem;
       max-inline-size: 30ch;
       text-align: center;
-      // width: 370px;
-      min-height: 266px;
+      min-height: 16.625rem;
       background-color: $bg-color;
     }
   }

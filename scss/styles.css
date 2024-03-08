@@ -416,7 +416,7 @@ header,
 .newsLetter .news1 button {
   color: #00715d;
   background-color: #ffffff;
-  padding: 10.7053px 22.6px;
+  padding: 0.669rem 1.413rem;
 }
 .newsLetter .news2 {
   display: flex;
@@ -465,7 +465,7 @@ header,
   gap: 1rem;
   max-inline-size: 30ch;
   text-align: center;
-  min-height: 266px;
+  min-height: 16.625rem;
   background-color: #f3f2e7;
 }
 
